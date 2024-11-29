@@ -9,11 +9,11 @@ export default function Home() {
   const [input, setInput] = useState<string>("");
   const [conversation, setConversation] = useUIState();
   const { continueConversation } = useActions();
-  const assistantClass = "bg-slate-100 rounded-lg p-4";
+  const assistantClass = "bg-slate-100 rounded-lg p-4 ";
   const userClass = "bg-slate-800 rounded-lg p-4 text-white";
   return (
-    <div className="flex flex-col justify-end w-full p-20 min-h-[100vh] gap-4 ">
-      <div className="flex flex-col justify-end w-full h-full overflow-scroll ">
+    <div className="flex flex-col justify-end p-20 h-[100vh] gap-4 ">
+      <div className="flex flex-col items-start justify-end w-full max-h-[80vh] gap-4 overflow-scroll ">
         {conversation.map((message: ChatMessage) => (
           <div
             className={`${
