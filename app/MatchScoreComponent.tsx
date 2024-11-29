@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Score } from "./ScoreSchema";
-import Image from "next/image";
 const Scorecard = (match: Score) => {
   const [showScore, setShowScore] = useState(false);
   return (

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { createAI } from "ai/rsc";
-import { ClientMessage, ServerMessage } from "./generate-ui-stream/action";
 import { AI } from "./actions";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

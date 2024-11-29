@@ -1,13 +1,11 @@
 "use client";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
-import { useChat } from "ai/react";
 import { useState } from "react";
 import { useActions, useUIState } from "ai/rsc";
 import { ChatMessage } from "./actions";
 import { nanoid } from "nanoid";
 export default function Home() {
-  // const { messages, input, handleInputChange, handleSubmit } = useChat();
   const [input, setInput] = useState<string>("");
   const [conversation, setConversation] = useUIState();
   const { continueConversation } = useActions();
